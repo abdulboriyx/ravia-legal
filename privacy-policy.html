@@ -135,6 +135,19 @@
             color: #92400e;
         }
         
+        .info-box {
+            background: #eff6ff;
+            border: 1px solid #3b82f6;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        
+        .info-box p {
+            margin: 0;
+            color: #1e40af;
+        }
+        
         .summary-table {
             background: #f9fafb;
             border-radius: 8px;
@@ -197,20 +210,21 @@
     <div class="container">
         <div class="logo">
             <h1>Ravia</h1>
-            <p>Path of Healing</p>
+            <p>Digital Focus Tool</p>
         </div>
         
         <h1 class="title">Privacy Policy</h1>
-        <p class="last-updated">Last Updated: January 27, 2026 | Effective Date: January 27, 2026</p>
+        <p class="last-updated">Last Updated: February 6, 2026 | Effective Date: February 6, 2026</p>
         
         <div class="highlight-box">
-            <p><strong>Our Promise:</strong> Your personal data stays on your device. We cannot read your journal. We cannot identify you. Your privacy is not a feature—it is the foundation of Ravia.</p>
+            <p><strong>Our Promise:</strong> Your personal data stays on your device. We cannot read your notes. We cannot identify you. Your privacy is not a feature—it is the foundation of Ravia.</p>
         </div>
         
         <h2>1. Introduction</h2>
-        <p>Ravia ("we," "us," "our," or "the app") is a personal wellness application designed to help users build healthier digital habits through awareness, reflection, and intentional choice. The name Ravia derives from Persian and Italian, meaning "path of healing."</p>
+        <p>Ravia ("we," "us," "our," or "the app") is a productivity and self-improvement application designed to help users build better digital habits through awareness, reflection, and intentional choice.</p>
         <p>This Privacy Policy explains how we collect, use, store, and protect your information when you use our mobile application. We are committed to protecting your privacy with the highest standards.</p>
         <p>By using Ravia, you agree to the terms of this Privacy Policy. If you do not agree, please do not use the app.</p>
+        <p><strong>Important:</strong> Ravia is not a medical app. It does not provide medical advice, diagnosis, or treatment. It is a personal productivity tool for managing digital habits.</p>
         
         <h2>2. Data Controller</h2>
         <p>The data controller responsible for your personal data is:</p>
@@ -223,7 +237,7 @@
         <h2>3. Our Privacy Principles</h2>
         <ol>
             <li><strong>Local-First:</strong> Your personal data is stored on your device, not our servers</li>
-            <li><strong>Zero-Knowledge:</strong> We cannot read your journal entries or personal notes</li>
+            <li><strong>Zero-Knowledge:</strong> We cannot read your notes or personal entries</li>
             <li><strong>Anonymous Analytics:</strong> We collect only aggregate patterns that cannot identify individuals</li>
             <li><strong>No Account Required:</strong> You can use the app without providing email or personal information</li>
             <li><strong>User Control:</strong> You can delete all your data at any time</li>
@@ -240,18 +254,18 @@
                 <th>Stored Where</th>
             </tr>
             <tr>
-                <td>Journal entries</td>
-                <td>Personal reflection and tracking</td>
+                <td>Personal notes</td>
+                <td>Self-reflection and tracking</td>
                 <td>Device only (encrypted)</td>
             </tr>
             <tr>
-                <td>Urge logs with context</td>
+                <td>Activity logs</td>
                 <td>Pattern recognition for you</td>
                 <td>Device only (encrypted)</td>
             </tr>
             <tr>
                 <td>Chat conversations</td>
-                <td>Support during difficult moments</td>
+                <td>In-app support feature</td>
                 <td>Device only (encrypted)</td>
             </tr>
             <tr>
@@ -277,10 +291,37 @@
         <h3>4.2 Data Deletion</h3>
         <p>You can delete all local data at any time through Settings → Delete All Data. Uninstalling the app permanently removes all data from your device.</p>
         
-        <h2>5. Anonymous Data We Collect</h2>
+        <h2>5. Accessibility Service Usage</h2>
+        <p>Ravia uses Android's Accessibility Service to provide its core content blocking functionality. This section explains exactly how and why we use this permission.</p>
+        
+        <div class="info-box">
+            <p><strong>Why we need Accessibility Service:</strong> To detect when you navigate to websites you've chosen to block, so we can help you stay focused on your goals.</p>
+        </div>
+        
+        <h3>5.1 What the Accessibility Service Does</h3>
+        <ul>
+            <li>Monitors the currently active app and browser URL bar</li>
+            <li>Compares URLs against your personal block list (stored locally)</li>
+            <li>Displays an intervention screen when a blocked site is detected</li>
+            <li>All processing happens entirely on your device</li>
+        </ul>
+        
+        <h3>5.2 What the Accessibility Service Does NOT Do</h3>
+        <ul>
+            <li>Does NOT collect or transmit your browsing history</li>
+            <li>Does NOT record which websites you visit</li>
+            <li>Does NOT send any data to our servers</li>
+            <li>Does NOT access your passwords, messages, or other sensitive content</li>
+            <li>Does NOT run when the app is disabled</li>
+        </ul>
+        
+        <h3>5.3 Your Control</h3>
+        <p>You can disable the Accessibility Service at any time through your device's Settings → Accessibility → Ravia. The app's other features (notes, tracking, insights) will continue to work without it.</p>
+        
+        <h2>6. Anonymous Data We Collect</h2>
         <p>To improve Ravia for all users, we collect anonymous usage patterns. This data <strong>cannot identify you</strong> or any individual user.</p>
         
-        <h3>5.1 What We Collect</h3>
+        <h3>6.1 What We Collect</h3>
         <table>
             <tr>
                 <th>Data</th>
@@ -298,13 +339,13 @@
                 <td>Identify challenging days globally</td>
             </tr>
             <tr>
-                <td>Emotion category</td>
-                <td>"Anxious"</td>
+                <td>Mood category</td>
+                <td>"Stressed"</td>
                 <td>Understand common triggers</td>
             </tr>
             <tr>
                 <td>Outcome</td>
-                <td>"Protected"</td>
+                <td>"Stayed focused"</td>
                 <td>Measure app effectiveness</td>
             </tr>
             <tr>
@@ -319,38 +360,37 @@
             </tr>
         </table>
         
-        <h3>5.2 What We DO NOT Collect</h3>
+        <h3>6.2 What We DO NOT Collect</h3>
         <ul>
             <li>Name, email, phone number, or any personal identifiers</li>
             <li>IP address</li>
             <li>Device ID, advertising ID, or hardware identifiers</li>
             <li>Exact timestamps (only 3-hour ranges)</li>
             <li>Location or GPS data</li>
-            <li>Journal content, notes, or personal writing</li>
+            <li>Note content or personal writing</li>
             <li>Browsing history or blocked site attempts</li>
             <li>Any information that could identify you</li>
         </ul>
         
-        <h3>5.3 Opt-Out</h3>
+        <h3>6.3 Opt-Out</h3>
         <p>You can disable anonymous analytics at any time: Settings → Privacy → Disable Analytics. The app will function fully without sending any data to our servers.</p>
         
-        <h2>6. How We Use Anonymous Data</h2>
+        <h2>7. How We Use Anonymous Data</h2>
         <p>We use aggregate, anonymous data solely to:</p>
         <ul>
             <li>Understand what times are most challenging for users globally</li>
             <li>Measure whether the app is helping users collectively</li>
             <li>Identify which features are most effective</li>
             <li>Improve future versions of the app</li>
-            <li>Publish anonymized research on digital wellness (without any identifying information)</li>
         </ul>
         
         <div class="highlight-box">
             <p><strong>We do not:</strong> Sell, rent, share, or transfer your data to third parties for marketing, advertising, or any commercial purpose.</p>
         </div>
         
-        <h2>7. Data Storage and Security</h2>
+        <h2>8. Data Storage and Security</h2>
         
-        <h3>7.1 Local Data (On Your Device)</h3>
+        <h3>8.1 Local Data (On Your Device)</h3>
         <ul>
             <li>Encrypted using AES-256</li>
             <li>Stored in Android's secure storage</li>
@@ -358,7 +398,7 @@
             <li>Never leaves your device</li>
         </ul>
         
-        <h3>7.2 Anonymous Analytics (On Our Servers)</h3>
+        <h3>8.2 Anonymous Analytics (On Our Servers)</h3>
         <ul>
             <li>Hosted on Supabase (PostgreSQL database)</li>
             <li>Server location: Determined by Supabase infrastructure</li>
@@ -367,7 +407,7 @@
             <li>Access restricted to app developer only</li>
         </ul>
         
-        <h3>7.3 Third-Party Services</h3>
+        <h3>8.3 Third-Party Services</h3>
         <table>
             <tr>
                 <th>Service</th>
@@ -395,19 +435,20 @@
             <li>Any service that creates user profiles</li>
         </ul>
         
-        <h2>8. Protection Feature</h2>
-        <p>Ravia includes a website protection feature that operates at the device level.</p>
+        <h2>9. Content Blocking Feature</h2>
+        <p>Ravia includes a website blocking feature that operates entirely on your device using the Accessibility Service.</p>
         <ul>
             <li>Blocking occurs entirely on your device</li>
             <li>We do not receive information about blocked sites</li>
             <li>We do not track your browsing activity</li>
             <li>The block list is stored locally on your device</li>
+            <li>You have full control over what sites are blocked</li>
         </ul>
         
-        <h2>9. Your Rights</h2>
+        <h2>10. Your Rights</h2>
         <p>Depending on your location, you have the following rights:</p>
         
-        <h3>9.1 All Users</h3>
+        <h3>10.1 All Users</h3>
         <ul>
             <li><strong>Access:</strong> View all data stored on your device within the app</li>
             <li><strong>Deletion:</strong> Delete all local data at any time</li>
@@ -416,7 +457,7 @@
             <li><strong>No account:</strong> Use the app without providing personal information</li>
         </ul>
         
-        <h3>9.2 European Users (GDPR)</h3>
+        <h3>10.2 European Users (GDPR)</h3>
         <p>Under the General Data Protection Regulation (GDPR), EU residents have additional rights:</p>
         <ul>
             <li><strong>Right to access:</strong> Request what data we have (for anonymous data, we cannot identify your specific data)</li>
@@ -428,28 +469,28 @@
         </ul>
         <p>To exercise GDPR rights, contact: <a href="mailto:demishasan19@gmail.com">demishasan19@gmail.com</a></p>
         
-        <h3>9.3 California Users (CCPA)</h3>
+        <h3>10.3 California Users (CCPA)</h3>
         <p>Under the California Consumer Privacy Act (CCPA), California residents have the right to:</p>
         <ul>
-            <li><strong>Know:</strong> What personal information we collect (see Sections 4 and 5)</li>
+            <li><strong>Know:</strong> What personal information we collect (see Sections 4 and 6)</li>
             <li><strong>Delete:</strong> Request deletion of personal information</li>
             <li><strong>Opt-out:</strong> We do not sell personal information</li>
             <li><strong>Non-discrimination:</strong> We will not discriminate against you for exercising rights</li>
         </ul>
         <p>To exercise CCPA rights, contact: <a href="mailto:demishasan19@gmail.com">demishasan19@gmail.com</a></p>
         
-        <h2>10. Children's Privacy</h2>
-        <p>Ravia is rated 12+ on app stores. While the app is designed for adults, users 12 and older may use the app with parental guidance.</p>
+        <h2>11. Children's Privacy</h2>
+        <p>Ravia is rated 12+ on app stores. The app is designed for users who want to improve their digital habits.</p>
         <ul>
             <li>We do not knowingly collect personal information from children under 13</li>
             <li>We do not require any personal information to use the app</li>
             <li>If you believe a child under 13 has provided personal information, contact us immediately</li>
         </ul>
         
-        <h2>11. Future Features</h2>
+        <h2>12. Future Features</h2>
         <p>We may introduce the following features in the future. This policy will be updated before any launch:</p>
         
-        <h3>11.1 Optional Account & Sync</h3>
+        <h3>12.1 Optional Account & Sync</h3>
         <p>We may offer optional account creation for users who want to sync data across devices. This will be:</p>
         <ul>
             <li>Completely optional (app works fully without it)</li>
@@ -457,7 +498,7 @@
             <li>Deletable at any time</li>
         </ul>
         
-        <h3>11.2 Community Features</h3>
+        <h3>12.2 Community Features</h3>
         <p>We may introduce community support features. If implemented:</p>
         <ul>
             <li>Participation will be optional</li>
@@ -466,10 +507,10 @@
             <li>You can delete community data independently</li>
         </ul>
         
-        <h3>11.3 Subscription</h3>
+        <h3>12.3 Subscription</h3>
         <p>We may offer a paid subscription for premium features. Payment processing will be handled by Google Play, and we will not store payment information.</p>
         
-        <h2>12. Data Retention</h2>
+        <h2>13. Data Retention</h2>
         <table>
             <tr>
                 <th>Data Type</th>
@@ -489,10 +530,10 @@
             </tr>
         </table>
         
-        <h2>13. International Data Transfers</h2>
+        <h2>14. International Data Transfers</h2>
         <p>Anonymous analytics data may be processed in countries outside your residence, including the United States (where Supabase and Vercel operate). Since this data contains no personal identifiers, standard data protection concerns do not apply.</p>
         
-        <h2>14. Changes to This Policy</h2>
+        <h2>15. Changes to This Policy</h2>
         <p>We may update this Privacy Policy from time to time. When we do:</p>
         <ul>
             <li>We will update the "Last Updated" date</li>
@@ -501,7 +542,7 @@
             <li>Previous versions will be archived and available upon request</li>
         </ul>
         
-        <h2>15. Contact Us</h2>
+        <h2>16. Contact Us</h2>
         <p>For any questions, concerns, or requests regarding this Privacy Policy or your data:</p>
         <div class="contact-box">
             <p><strong>Email:</strong> <a href="mailto:demishasan19@gmail.com">demishasan19@gmail.com</a></p>
@@ -509,7 +550,7 @@
             <p><strong>Languages:</strong> English, Russian, Uzbek</p>
         </div>
         
-        <h2>16. Summary</h2>
+        <h2>17. Summary</h2>
         <table class="summary-table">
             <tr>
                 <th>Question</th>
@@ -520,7 +561,7 @@
                 <td>No</td>
             </tr>
             <tr>
-                <td>Can you read my journal?</td>
+                <td>Can you read my notes?</td>
                 <td>No</td>
             </tr>
             <tr>
@@ -547,6 +588,10 @@
                 <td>Can I opt out of analytics?</td>
                 <td>Yes</td>
             </tr>
+            <tr>
+                <td>Do you track my browsing?</td>
+                <td>No</td>
+            </tr>
         </table>
         
         <div class="highlight-box">
@@ -555,7 +600,7 @@
         
         <footer>
             <p>© 2026 Ravia. All rights reserved.</p>
-            <p>Ravia — Path of Healing</p>
+            <p>Ravia — Digital Focus Tool</p>
         </footer>
     </div>
 </body>
